@@ -64,7 +64,12 @@ docpadConfig = {
 	collections:
 	# Reveal.js slides
 		slides: (database) ->
-			database.findAllLive({tags: $has: 'slide', slideOrder: $exists: true},{slideOrder:1})
+      query =
+        tags: $has: 'slide'
+        slideOrder: $exists: true
+      sorting =
+        slideOrder: 1
+      database.findAllLive(query, sorting)
 
 }
 
