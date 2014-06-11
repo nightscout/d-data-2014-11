@@ -25,4 +25,4 @@ div class:'reveal', ->
 		a class:"down", href:"#", '▼'
 
 	# Presentation progress bar
-	div class:"progress", -> span
+	div class:"progress", -> span ""
