@@ -1,4 +1,3 @@
-# -----------------------------
 # Prepare
 
 # Get our formatted site title as defined by out docpad.cson file
