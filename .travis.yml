@@ -1,6 +1,6 @@
 branches:
   only:
-    - master
+  - master
 language: node_js
 before_script:
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
@@ -10,8 +10,7 @@ script:
 env:
   global:
   - FOO="BAR"
-  - GIT_EMAIL=bewest@gmail.com
   - GIT_NAME="Ben West"
   - GH_REPO="nightscout/d-data-2014-11"
-  - secure: yFo//teMuac3gkSBBiK/Gs9uaxuJZ93PXViE9fQbg/MerbcsaKnjNcUhId17fHGXm8j5G3AZ9sfpzB6ISlJllxujiBovgNF45yRx3xDHIi+vuluxBIpMlM+rRO/nsm3VE3Hr96SM5WiMv+1bHoUUYWXeMcI96nTvVdzTrwxzb00=
-  - secure: EI+cb+MYloj6imzQ7vQA1FYLJYqIJBDWnbwG6HinRIYl+jiKWmzrK/aemT22uyHT22hP03cndO5/b1aTkktl/KFuF1FfkEIyRemVQPOKc9/p5g1qsty7jcllJcM2NWVuakOjKPkUpGAJpIJULTy9294yvBaKfu+cdsD3AibYv7k=
+  secure: "NFGeatrFhNC4u55eyW1sDbWJEL+c35FHUREHw21eNMUytqKnhxQ4XYi21H4BvCdpU6+DEw8zQBqvPo/ezzjY+R6fJgWe4dzIFfNeb1J3UA4CVyILowUtwXlSpKtvhCrl30DYpJXWgfwwoFPB/sw5IxmI8dXfilGkrZ3pqgBn3qE="
+  secure: "ZHjIXfqPxX2hqnNvjQHC4l3HyipHEhoa0WvxSb9RjARJr/LYwGkZ1S22ml8NHO1sGo6hrxHeTmAWzeCM+QdXW3DfFQ1hd/CnKpLT7niAbo5qJ1fwsZ2c8tOH02p0y/3O2JHzzd5zaGuzUbfnzI/50E+6YBFCYe3TY7lNYkLko/I="
