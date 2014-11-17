@@ -20,12 +20,12 @@ docpadConfig = {
 				"""
 			# Authors
 			authors: """
-				Jason Calabrese, John Costik, Ben West
+				Some authors
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				payitforward nightscout
+				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
 				"""
 
 

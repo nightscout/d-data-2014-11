@@ -58,6 +58,9 @@ html lang: 'en', ->
 
 		link rel:'stylesheet', href:'vendor/reveal/css/print/paper.css', type:'text/css', media:'print'
 
+		link rel:'stylesheet', href:'css/site.css', type:'text/css'
+
+
 		# -----------------------------
 		# IE conditional comment
 		ie 'lte IE9', ->
