@@ -1,0 +1,15 @@
+branches:
+  only:
+    - master
+language: node_js
+before_script:
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+- ./prebuild.sh
+script:
+- ./node_modules/.bin/docpad deploy-ghpages --env static
+env:
+  global:
+  - FOO="BAR"
+  - GH_REPO="nightscout/d-data-2014-11"
+  - secure: yFo//teMuac3gkSBBiK/Gs9uaxuJZ93PXViE9fQbg/MerbcsaKnjNcUhId17fHGXm8j5G3AZ9sfpzB6ISlJllxujiBovgNF45yRx3xDHIi+vuluxBIpMlM+rRO/nsm3VE3Hr96SM5WiMv+1bHoUUYWXeMcI96nTvVdzTrwxzb00=
+  - secure: EI+cb+MYloj6imzQ7vQA1FYLJYqIJBDWnbwG6HinRIYl+jiKWmzrK/aemT22uyHT22hP03cndO5/b1aTkktl/KFuF1FfkEIyRemVQPOKc9/p5g1qsty7jcllJcM2NWVuakOjKPkUpGAJpIJULTy9294yvBaKfu+cdsD3AibYv7k=
