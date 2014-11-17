@@ -81,6 +81,15 @@ html lang: 'en', ->
 		script type:'text/javascript', ->
 			"""
 				Reveal.initialize({
+          dependencies: [
+            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+            { src: 'vendor/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+            // Interpret Markdown in <section> elements
+            { src: 'vendor/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'vendor/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+
+          ],
 					// Display controls in the bottom right corner
 					controls: true,
 

@@ -18,10 +18,14 @@ docpadConfig = {
 			description: """
 				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
 				"""
+			# Authors
+			authors: """
+				Jason Calabrese, John Costik, Ben West
+				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				payitforward nightscout
 				"""
 
 
@@ -29,7 +33,7 @@ docpadConfig = {
 		# Revealjs.docpad specific configuration
 
 		# Generate menu
-		generateSlidesMenu: true
+		generateSlidesMenu: false
 
 		# -----------------------------
 		# Helper Functions
@@ -54,6 +58,11 @@ docpadConfig = {
 		getPreparedKeywords: ->
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
+
+    # Get prepared authors
+		getPreparedAuthors: ->
+			# Merge the document keywords with the site keywords
+			[@site.authors].concat(@document.authors or []).join('')
 
 
 

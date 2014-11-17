@@ -1,0 +1,62 @@
+---
+title: 'Reveal.js'
+layout: 'default'
+---
+
+<% if @generateSlidesMenu: %>
+  <div class="menu">
+    <ul>
+      <% for slide in @getCollection('slides').toJSON(): %>
+        <li>
+          <a href="#/<%= slide.htmlId %>"
+            ><%= slide.title %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<!-- quick hack this is not displayed, but causes the
+markdown parsing to kick in soon enough to actually display
+the first slide -->
+<div class="hide hidden" data-markdown>
+      <script type="text/template">
+        <%- @getPreparedDescription( ) %>
+      </script>
+</div>
+<div class="reveal">
+  <div class="slides">
+    <section data-markdown class="slide">
+      <h1><%- @getPreparedTitle( ) %></h1>
+      <script type="text/template">
+        <%- @getPreparedDescription( ) %>
+        <%- @getPreparedAuthors( ) %>
+
+      </script>
+    </section>
+    <% for slide in @getCollection('slides').toJSON(): %>
+
+    <section data-markdown data-vertical='^----\n'
+      data-separator='^---\n' class="slide">
+
+      <script type='text/template'>
+        <%- slide.body if slide.body %>
+      </script>
+
+    </section>
+
+    <% end %>
+  </div>
+
+  <!-- # The navigational controls UI -->
+  <aside class="controls" style="display: block;">
+    <a class="left" href="#">◄</a>
+    <a class="right" href="#">►</a>
+    <a class="up" href="#">▲</a>
+    <a class="down" href="#">▼</a>
+  </aside>
+
+  <!-- # Presentation progress bar -->
+  <div class="progress"><span></span></div>
+
+</div>

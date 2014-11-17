@@ -3,7 +3,9 @@ Create reveal.js presentations using DocPad.
 
 ## Description
 
-Gives you everything to directly start writing your reveal.js slides, with an optional menu to navigate between them.
+Gives you everything to directly start writing your
+reveal.js slides, with an optional menu to navigate between
+them.
 
 ## Getting Started
 
