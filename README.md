@@ -4,20 +4,17 @@ Create reveal.js presentations using DocPad.
 ## Description
 
 Gives you everything to directly start writing your
-reveal.js slides, with an optional menu to navigate between
-them.
+reveal.js slides.
 
 ## Getting Started
-
-1. [Install DocPad](https://github.com/bevry/docpad)
 
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/DjebbZ/revealjs-docpad.git
-	cd revealjs.docpad
+	git clone git://github.com/nightscout/d-data-2014-11.git
+	cd d-data-2014-11
 	npm install
-	docpad run
+	./node_modules/.bin/docpad run
 	```
 
 1. [Open http://localhost:9778/](http://localhost:9778/)
@@ -66,8 +63,6 @@ Change the Reveal.js options in `src/layouts/default.html.coffee`.
 
 ## Known issues
 
-- The controls UI doesn't highlight the possible directions.
-- I couldn't include the Reveal dependencies as written in the docs, they produce an totally-not-explicit js error.
 - In my machine, the Docpad's livereload plugin (shipped with the project) doesn't work.
 - The generated menu has no style. I'm lazy and leave it up to you.
 
@@ -89,3 +84,6 @@ If you are wanting to close-source your website, we'd suggest using the followin
 	Copyright [Your Name](http://your.website). All rights reserved.
 
 Other included things such as themes and libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
+=======
+d-data-2014-11
+==============
