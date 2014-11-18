@@ -61,6 +61,17 @@ html lang: 'en', ->
 
 		link rel:'stylesheet', href:'css/site.css', type:'text/css'
 
+		# <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		script type:'text/javascript', ->
+			"""
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'vendor/reveal/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+			"""
 
 		# -----------------------------
 		# IE conditional comment
@@ -74,8 +85,8 @@ html lang: 'en', ->
 	body ->
 		text @content
 
-		script src:'vendor/reveal/lib/js/showdown.js'
 		script src:'vendor/reveal/lib/js/classList.js'
+		script src:'vendor/reveal/lib/js/data-markdown.js'
 		script src:'vendor/reveal/lib/js/head.min.js'
 		script src:'vendor/reveal/lib/js/highlight.js'
 		script src:'vendor/reveal/lib/js/html5shiv.js'
