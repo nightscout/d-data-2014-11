@@ -19,11 +19,15 @@ docpadConfig = {
 From one to thousands, Nightscout is meeting a significant need for
 people with diabetes and their loved ones.
 
+----
+
 Real-time remote monitoring of CGM data has transformed lives, enabling
 freedoms once thought lost to type one: Date-nights, sleep-overs,
 out-of-town trips, and countless others… combined, they result in a
 marked improvement in quality of life. The countless testimonials and
 outpouring of gratitude is truly awe inspiring.
+
+----
 
 Given freely to the community, it has continued to attract individuals
 willing to help and participate in its innovation and growth. People are
