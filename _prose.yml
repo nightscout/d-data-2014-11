@@ -2,6 +2,18 @@ prose:
   rooturl: 'src/documents'
   siteurl: 'http://nightscout.github.io/d-data-2014-11/'
   metadata:
+    src/documents:
+      - name: "tags"
+        field:
+          element: "button"
+          on: "[slide]"
+          off: ""
+          label: 'make a slide'
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+          value: "slides/slidexx.md"
     src/documents/slides:
       - name: "tags"
         field:
