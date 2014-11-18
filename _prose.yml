@@ -13,7 +13,7 @@ prose:
         field:
           element: "text"
           label: "title"
-          value: "slides/slidexx.md"
+          value: "slides/slidexx"
     src/documents/slides:
       - name: "tags"
         field:
