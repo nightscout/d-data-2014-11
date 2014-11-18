@@ -1,5 +1,5 @@
 ---
-title: 'Reveal.js'
+title: '#payitforward'
 layout: 'default'
 ---
 
@@ -26,14 +26,19 @@ the first slide -->
 </div>
 <div class="reveal">
   <div class="slides">
-    <section data-markdown class="slide">
+    <section class="slide">
+
       <h1><%- @getPreparedTitle( ) %></h1>
+      <h2><%- @getPreparedAuthors( ) %></h2>
+    </section>
+      <section class="slide" data-markdown data-vertical='^----\n'
+        data-separator='^---\n' class="slide">
       <script type="text/template">
         <%- @getPreparedDescription( ) %>
         <%- @getPreparedAuthors( ) %>
 
       </script>
-    </section>
+      </section>
     <% for slide in @getCollection('slides').toJSON(): %>
 
     <section data-markdown data-vertical='^----\n'
