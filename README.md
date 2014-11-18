@@ -7,9 +7,14 @@ Presentation.
 
 1. Sign into https://prose.io/
 1. Visit http://prose.io/#nightscout/d-data-2014-11/edit/master/src/documents/slide0.md
-1. Or visit 
+1. Or visit  http://prose.io/#nightscout/d-data-2014-11
+  And select New file, name your file `src/documents/slidexx.md` and include `tags: ['slide']` in the yaml at the top.
 
+Pushing to the repo automatically builds.
+This puts focus on developing the content easily in markdown.
 
+There are numerous easy little tricks to do fancier things with images,
+backgrounds etc.
 
 
 ## License
