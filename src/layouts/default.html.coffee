@@ -55,6 +55,7 @@ html lang: 'en', ->
 		link rel:'stylesheet', href:'vendor/reveal/css/main.css', type:'text/css'
 		link rel:'stylesheet', href:'vendor/reveal/css/theme/default.css', type:'text/css'
 		link rel:'stylesheet', href:'vendor/reveal/lib/css/zenburn.css', type:'text/css'
+		link rel:'stylesheet', href:'vendor/reveal/css/theme/solarized.css', type:'text/css'
 
 		link rel:'stylesheet', href:'vendor/reveal/css/print/paper.css', type:'text/css', media:'print'
 

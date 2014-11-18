@@ -42,7 +42,9 @@ the first slide -->
     <% for slide in @getCollection('slides').toJSON(): %>
 
     <section data-markdown data-vertical='^----\n'
-      data-separator='^---\n' class="slide">
+      data-separator='^---\n' class="slide"
+      data-background="<%- slide.background %>"
+      >
 
       <script type='text/template'>
         <%- slide.body if slide.body %>
