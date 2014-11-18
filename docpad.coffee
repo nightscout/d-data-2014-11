@@ -90,9 +90,9 @@ help improve the lives of many.  """
 		slides: (database) ->
       query =
         tags: $has: 'slide'
-        slideOrder: $exists: true
       sorting =
         slideOrder: 1
+        url: 1
       database.findAllLive(query, sorting)
 
 }
