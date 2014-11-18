@@ -8,9 +8,9 @@ before_script:
 script:
 - ./node_modules/.bin/docpad deploy-ghpages --env static
 env:
+  - secure: "NFGeatrFhNC4u55eyW1sDbWJEL+c35FHUREHw21eNMUytqKnhxQ4XYi21H4BvCdpU6+DEw8zQBqvPo/ezzjY+R6fJgWe4dzIFfNeb1J3UA4CVyILowUtwXlSpKtvhCrl30DYpJXWgfwwoFPB/sw5IxmI8dXfilGkrZ3pqgBn3qE="
+  - secure: "ZHjIXfqPxX2hqnNvjQHC4l3HyipHEhoa0WvxSb9RjARJr/LYwGkZ1S22ml8NHO1sGo6hrxHeTmAWzeCM+QdXW3DfFQ1hd/CnKpLT7niAbo5qJ1fwsZ2c8tOH02p0y/3O2JHzzd5zaGuzUbfnzI/50E+6YBFCYe3TY7lNYkLko/I="
   global:
   - FOO="BAR"
   - GIT_NAME="Ben West"
   - GH_REPO="nightscout/d-data-2014-11"
-  secure: "NFGeatrFhNC4u55eyW1sDbWJEL+c35FHUREHw21eNMUytqKnhxQ4XYi21H4BvCdpU6+DEw8zQBqvPo/ezzjY+R6fJgWe4dzIFfNeb1J3UA4CVyILowUtwXlSpKtvhCrl30DYpJXWgfwwoFPB/sw5IxmI8dXfilGkrZ3pqgBn3qE="
-  secure: "ZHjIXfqPxX2hqnNvjQHC4l3HyipHEhoa0WvxSb9RjARJr/LYwGkZ1S22ml8NHO1sGo6hrxHeTmAWzeCM+QdXW3DfFQ1hd/CnKpLT7niAbo5qJ1fwsZ2c8tOH02p0y/3O2JHzzd5zaGuzUbfnzI/50E+6YBFCYe3TY7lNYkLko/I="
