@@ -17,8 +17,10 @@ prose:
     src/documents/slides:
       - name: "tags"
         field:
-          element: "hidden"
-          value: "[slide]"
+          element: "button"
+          on: "[slide]"
+          off: ""
+          label: 'make a slide'
       - name: "title"
         field:
           element: "text"
