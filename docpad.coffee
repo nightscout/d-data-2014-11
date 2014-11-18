@@ -12,20 +12,31 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The default title of our website
-			title: "Your Website"
+			title: "NightScout @ d-data 11/2014"
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
-				"""
+From one to thousands, Nightscout is meeting a significant need for
+people with diabetes and their loved ones.
+
+Real-time remote monitoring of CGM data has transformed lives, enabling
+freedoms once thought lost to type one: Date-nights, sleep-overs,
+out-of-town trips, and countless others… combined, they result in a
+marked improvement in quality of life. The countless testimonials and
+outpouring of gratitude is truly awe inspiring.
+
+Given freely to the community, it has continued to attract individuals
+willing to help and participate in its innovation and growth. People are
+continually "paying it forward" and contributing their time, talents to
+help improve the lives of many.  """
 			# Authors
 			authors: """
-				Some authors
+				Jason Calabrese, John Costik, Ben West
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				payitforward, nightscout, intro, history, fda, regulation, current development, cookie monster, IOB/COB, DIYPS
 				"""
 
 
