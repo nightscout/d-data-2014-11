@@ -26,13 +26,13 @@ the first slide -->
 </div>
 <div class="reveal">
   <div class="slides">
-    <section class="slide">
+    <section class="intro-slide">
 
       <h1><%- @getPreparedTitle( ) %></h1>
       <h2><%- @getPreparedAuthors( ) %></h2>
     </section>
       <section class="slide" data-markdown data-vertical='^----\n'
-        data-separator='^---\n' class="slide">
+        data-separator='^---\n' data-background="#bb00ff" class="slide">
       <script type="text/template">
         <%- @getPreparedDescription( ) %>
         <%- @getPreparedAuthors( ) %>
@@ -42,7 +42,7 @@ the first slide -->
     <% for slide in @getCollection('slides').toJSON(): %>
 
     <section data-markdown data-vertical='^----\n'
-      data-separator='^---\n' class="slide"
+      data-separator='^---\n' class=""
       data-background="<%- slide.background %>"
       >
 
@@ -55,13 +55,14 @@ the first slide -->
     <% end %>
   </div>
 
-  <!-- # The navigational controls UI -->
+  <!-- # The navigational controls UI 
   <aside class="controls" style="display: block;">
     <a class="left" href="#">◄</a>
     <a class="right" href="#">►</a>
     <a class="up" href="#">▲</a>
     <a class="down" href="#">▼</a>
   </aside>
+  -->
 
   <!-- # Presentation progress bar -->
   <div class="progress"><span></span></div>

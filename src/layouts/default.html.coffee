@@ -52,12 +52,13 @@ html lang: 'en', ->
 
 		link href:"http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", rel:"stylesheet", type:"text/css"
 
-		link rel:'stylesheet', href:'vendor/reveal/css/main.css', type:'text/css'
-		link rel:'stylesheet', href:'vendor/reveal/css/theme/default.css', type:'text/css'
-		link rel:'stylesheet', href:'vendor/reveal/lib/css/zenburn.css', type:'text/css'
-		link rel:'stylesheet', href:'vendor/reveal/css/theme/solarized.css', type:'text/css'
+		# link rel:'stylesheet', href:'vendor/reveal/css/main.css', type:'text/css'
+		link rel:'stylesheet', href:'vendor/reveal/css/reveal.min.css', type:'text/css'
+		# link rel:'stylesheet', href:'vendor/reveal/lib/css/zenburn.css', type:'text/css'
+		# link rel:'stylesheet', href:'vendor/reveal/css/theme/default.css', type:'text/css'
+		link rel:'stylesheet', href:'vendor/reveal/css/theme/solarized.css', type:'text/css', id: 'theme'
 
-		link rel:'stylesheet', href:'vendor/reveal/css/print/paper.css', type:'text/css', media:'print'
+		# link rel:'stylesheet', href:'vendor/reveal/css/print/paper.css', type:'text/css', media:'print'
 
 		link rel:'stylesheet', href:'css/site.css', type:'text/css'
 
@@ -85,57 +86,39 @@ html lang: 'en', ->
 	body ->
 		text @content
 
-		script src:'vendor/reveal/lib/js/classList.js'
-		script src:'vendor/reveal/lib/js/data-markdown.js'
+		# script src:'vendor/reveal/lib/js/classList.js'
+		# script src:'vendor/reveal/lib/js/showdown.js'
+		# script src:'vendor/reveal/lib/js/data-markdown.js'
+		# script src:'vendor/reveal/lib/js/highlight.js'
+		# script src:'vendor/reveal/lib/js/html5shiv.js'
 		script src:'vendor/reveal/lib/js/head.min.js'
-		script src:'vendor/reveal/lib/js/highlight.js'
-		script src:'vendor/reveal/lib/js/html5shiv.js'
-		script src:'vendor/reveal/lib/js/showdown.js'
 		script src:'vendor/reveal/js/reveal.js'
 
 		script type:'text/javascript', ->
 			"""
-				Reveal.initialize({
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
           dependencies: [
-            // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
             { src: 'vendor/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-
-            // Interpret Markdown in <section> elements
             { src: 'vendor/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'vendor/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
-
-          ],
-					// Display controls in the bottom right corner
-					controls: true,
-
-					// Display a presentation progress bar
-					progress: true,
-
-					// Push each slide change to the browser history
-					history: true,
-
-					// Enable keyboard shortcuts for navigation
-					keyboard: true,
-
-					// Enable the slide overview mode
-					overview: true,
-
-					// Loop the presentation
-					loop: false,
-
-					// Number of milliseconds between automatically proceeding to the
-					// next slide, disabled when set to 0
-					autoSlide: 0,
-
-					// Enable slide navigation via mouse wheel
-					mouseWheel: true,
-
-					// Apply a 3D roll to links on hover
-					rollingLinks: true,
-
-					// Transition style
-					transition: 'default' // default/cube/page/concave/linear(2d)
-				});
+            { src: 'vendor/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'vendor/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'vendor/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'vendor/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+        });
 			"""
 
 		# Analytics
